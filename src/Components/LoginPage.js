@@ -11,7 +11,6 @@ import {
 } from "firebase/auth";
 
 import { signInWithPopup } from "firebase/auth";
-import { useNavigate } from "react-router-dom";
 
 import { getAuth, updateProfile } from "firebase/auth";
 import { useDispatch } from "react-redux";
@@ -19,8 +18,6 @@ import { useDispatch } from "react-redux";
 import { addUser } from "../Utils/userSlice";
 
 const Login = () => {
-  //When we have to move one page to anOther page then this will work...
-  const navigate = useNavigate();
 
   const dispatch = useDispatch();
 
@@ -72,7 +69,6 @@ const Login = () => {
                   photoURL: photoURL,
                 })
               );
-              navigate("/browse");
               // ...
             })
             .catch((error) => {
@@ -100,7 +96,6 @@ const Login = () => {
           const user = userCredential.user;
           console.log(user);
           console.log("User Sign In");
-          navigate("/browse");
           // ...
         })
         .catch((error) => {
