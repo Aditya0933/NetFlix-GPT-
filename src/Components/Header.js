@@ -15,8 +15,6 @@ const Header = () => {
   const navigate = useNavigate();
 
   const user = useSelector((store) => store.user);
-  console.log("This is Photo URL...");
-  console.log(user);
 
   //Sign Out Handler...
   const SignOutHandler = () => {
@@ -56,12 +54,12 @@ const Header = () => {
 
   return (
     <div className="flex justify-between">
-      <div className="px-8 py-2 bg-gradient-to-b from-black z-10">
-        <img className="w-44" src={Logo} alt="Logo-IMG"></img>
+      <div className="px-4 sm:px-8 sm:py-2 bg-gradient-to-b from-black z-10">
+        <img className="w-36 sm:w-44" src={Logo} alt="Logo-IMG"></img>
       </div>
       {user && (
-        <div className="flex items-center">
-          <img className="w-10 h-10 mr-2" alt="userIcon" src={user_Avtar} />
+        <div className="flex items-center z-13">
+          <img className="w-12 h-12 mr-2" alt="userIcon" src={user_Avtar} />
           <button className="font-bold text-lg" onClick={SignOutHandler}>
             Sign Out
           </button>

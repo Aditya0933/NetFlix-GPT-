@@ -1,30 +1,21 @@
 import Header from "./Header";
-import { API_Options } from "../Utils/constant";
-import { useEffect } from "react";
-import { useDispatch } from "react-redux";
-import { addnowPlayingMovies } from "../Utils/moviesSlice";
+import useNowPlayingMovies from "../Hooks/useNowPlayingMovies";
+import MainContainer from "./MainContainer";
+import SecondaryContainer from "./SecondaryContainer";
 
-const Browse = () =>{
+const Browse = () => {
+  //This is my Custom Hook
+  useNowPlayingMovies();
 
-    const dispatch = useDispatch();
-
-    const getPlayingMovies = async () => {
-        const data = await fetch('https://api.themoviedb.org/3/movie/now_playing?page=1', API_Options);
-        const json = await data.json();
-        console.log(json.results)
-        dispatch(addnowPlayingMovies(json.results))
-    }
-
-    useEffect( () => {
-        getPlayingMovies();
-    },[])
-
-    return (
-        <div>
-            <Header/>
-            Browse
-        </div>
-    )
-}
+  return (
+    <div>
+      <div className="absolute w-full">
+        <Header />
+      </div>
+      <MainContainer />
+      <SecondaryContainer />
+    </div>
+  );
+};
 
 export default Browse;
