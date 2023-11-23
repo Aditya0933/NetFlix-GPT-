@@ -133,7 +133,7 @@ const Login = () => {
   });
 
   return (
-    <div className="relative overflow-hidden">
+    <div>
       {/* Background IMG of Netflix... */}
       <div className="absolute -z-10 ">
         <img
