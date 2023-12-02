@@ -7,7 +7,6 @@ import MovieList from "./MovieList"
 const SecondaryContainer = () => {
 
     const movies = useSelector(store => store.movies)
-    console.log("Secondary Container Movie - " + movies)
 return (
     <div className="">
         <MovieList title={"Now Playing Movies "} movies={movies.nowPlayingMovies}/>

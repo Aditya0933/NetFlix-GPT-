@@ -16,6 +16,7 @@ import { getAuth, updateProfile } from "firebase/auth";
 import { useDispatch } from "react-redux";
 
 import { addUser } from "../Utils/userSlice";
+import {BG_URL} from "../Utils/constant";
 
 const Login = () => {
   const dispatch = useDispatch();
@@ -120,12 +121,10 @@ const Login = () => {
 
   // Related with Sign In and Sign Up with Google Logic...
   const GoogleSignInClickHandler = () => {
-    // console.log("GoogleSignInClickHandler Clicked");
     signInWithPopup(auth, provider).then((date) => {
       setgoogleSignInValue(email.current.value);
       localStorage.setItem("Email-", email.current.value);
     });
-    // console.log("GoogleSignInClickHandler Un Clicked");
   };
 
   useEffect(() => {
@@ -138,7 +137,7 @@ const Login = () => {
       <div className="absolute -z-10 ">
         <img
           className="bg-cover bg-center max-w-none"
-          src="https://assets.nflxext.com/ffe/siteui/vlv3/ab4b0b22-2ddf-4d48-ae88-c201ae0267e2/0efe6360-4f6d-4b10-beb6-81e0762cfe81/IN-en-20231030-popsignuptwoweeks-perspective_alpha_website_large.jpg"
+          src={BG_URL}
           alt="WebSite-Background"
           />
       </div>

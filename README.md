@@ -36,6 +36,9 @@
 34. usePopulerMovies Custom Hook
 35. useTopRatedMovies Custom Hook
 36. useUpComing Custom Hook
+37. GPT Search Page
+38. GPT Search Bar
+39. * Multi-language feature in our App
 
 
 

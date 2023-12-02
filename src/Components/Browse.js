@@ -5,8 +5,12 @@ import SecondaryContainer from "./SecondaryContainer";
 import useNowPlayingMovies from "../Hooks/useNowPlayingMovies";
 import usePopulerMovies from "../Hooks/usePopulerMovies";
 import useTopRatedMovies from "../Hooks/useTopRatedMovies";
+import { useSelector } from "react-redux";
+import GptSearch from "./GptSearch";
 
 const Browse = () => {
+  const showGptSearch = useSelector((store) => store.gpt.showGptSearch);
+
   //This is my Custom Hook
   useNowPlayingMovies();
   useUpcoming();
@@ -18,8 +22,14 @@ const Browse = () => {
       <div className="absolute w-full">
         <Header />
       </div>
-      <MainContainer />
-      <SecondaryContainer />
+      {showGptSearch ? (
+        <GptSearch />
+      ) : (
+        <>
+          <MainContainer />
+          <SecondaryContainer />
+        </>
+      )}
     </div>
   );
 };

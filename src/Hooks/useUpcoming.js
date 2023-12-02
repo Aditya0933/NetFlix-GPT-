@@ -15,7 +15,6 @@ const useUpcoming = () => {
         API_Options
       );
       const json = await data.json();
-      console.log("useUpcoming Data" + json.results)
       dispatch(addUpcoming(json.results));
     };
 
