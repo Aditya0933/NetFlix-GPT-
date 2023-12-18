@@ -16,3 +16,6 @@ export const SUPPORTED_LANGUAGES = [
   {identifiers:"hindi", name:"Hindi"},
   {identifiers:"spanish", name:"Spanish"},
 ]
+
+
+export const OPEN_AI_KEY = "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"

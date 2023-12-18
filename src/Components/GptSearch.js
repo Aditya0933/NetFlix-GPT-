@@ -6,7 +6,7 @@ const GptSearch = () => {
 
     return(<div className="overflow-none">
         {/* Background IMG of Netflix... */}
-      <div className="absolute -z-10 ">
+      <div className="fixed -z-10 ">
         <img
           className="bg-cover bg-center max-w-[100%]"
           src={BG_URL}
