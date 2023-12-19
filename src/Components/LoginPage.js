@@ -166,7 +166,7 @@ const Login = () => {
                 <input
                   type="text"
                   placeholder="Enter Full Name"
-                  className="p-2 lg:p-4 my-3 rounded-md bg-slate-800 text-xl text-[#b3b3b3] w-full"
+                  className="p-2 sm:p-4 my-1 sm:my-3 rounded-md bg-slate-800 text-xl text-[#b3b3b3] w-full"
                 ></input>
               )}
             </div>
@@ -175,13 +175,13 @@ const Login = () => {
                 ref={email}
                 type="text"
                 placeholder="Email Address"
-                className="p-4 my-3 rounded-md bg-slate-800 text-xl text-[#b3b3b3] w-full"
+                className="p-2 sm:p-4 my-1 sm:my-3 rounded-md bg-slate-800 text-xl text-[#b3b3b3] w-full"
               ></input>
             </div>
             <div>
               <input
                 ref={password}
-                className="p-4 my-3 rounded-md bg-slate-800 text-xl text-[#b3b3b3] w-full"
+                className="p-2 sm:p-4 my-1 sm:my-3 rounded-md bg-slate-800 text-xl text-[#b3b3b3] w-full"
                 type="password"
                 placeholder="Password"
               ></input>
@@ -194,7 +194,7 @@ const Login = () => {
           <div>
             <div>
               <button
-                className="p-3 bg-[#e50914] w-full mt-8 mb-4 text-xl rounded"
+                className="p-2 sm:p-3 bg-[#e50914] w-full mt-4 sm:mt-8 mb-2 sm:mb-4 text-xl rounded"
                 onClick={FormButtonClicked}
               >
                 {signInForm ? "Sign In" : "Sign Up"}
@@ -213,10 +213,10 @@ const Login = () => {
 
           {/* Sign In and Sign Up with Google Logic...*/}
           <div
-            className="flex justify-center border-2 cursor-pointer px-2 py-3 rounded-sm mt-10 mb-4"
+            className="flex justify-center border-2 cursor-pointer px-1 py-2 sm:px-2 sm:py-3 rounded-sm mt-5 sm:mt-10 mb-4"
             onClick={() => GoogleSignInClickHandler()}
           >
-            <button className="text-xl ">
+            <button className="sm:text-xl ">
               {signInForm ? "Sign In with Google" : "Sign Up with Google"}
             </button>
             <img
@@ -228,7 +228,7 @@ const Login = () => {
 
           {/* Form Discreption Content... */}
           <div className=" ">
-            <p className="text-[#b3b3b3] text-xl my-3">
+            <p className="text-[#b3b3b3] sm:text-xl my-3">
               New to Netflix?{" "}
               <span
                 className=" text-white cursor-pointer"
@@ -238,7 +238,7 @@ const Login = () => {
               </span>{" "}
               .
             </p>
-            <p className="pr-2 text-[#b3b3b3] text-md tracking-[.2px] leading-[24px]">
+            <p className="pr-2 text-[#b3b3b3] sm:text-sm tracking-[.2px] leading-[24px]">
               This page is protected by Google reCAPTCHA to ensure you're not a
               bot.
             </p>
