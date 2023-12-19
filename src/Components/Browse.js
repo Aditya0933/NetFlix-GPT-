@@ -22,7 +22,7 @@ const Browse = () => {
       <div className="absolute w-full">
         <Header />
       </div>
-      <div>
+      <div >
         {showGptSearch ? (
           <GptSearch />
         ) : (

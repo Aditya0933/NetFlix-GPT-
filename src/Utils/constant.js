@@ -1,4 +1,6 @@
-export const user_Avtar = "https://cdn-icons-png.flaticon.com/512/666/666201.png";
+export const user_Avtar = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ410Y-GLasC2ZVBdP7ZhLYqv9U3YSIROQb3m6a6qdNuwS91VxjMSfLIAoWIsYhCE3OpI&usqp=CAU";
+
+export const user_Avtar_2 = "https://icons.veryicon.com/png/o/miscellaneous/fusion-number/logout-40.png"
 
 export const API_Options = {
     method: 'GET',
