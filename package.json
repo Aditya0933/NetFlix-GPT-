@@ -1,4 +1,5 @@
 {
+  "homepage": "https://Aditya0933.github.io/NetFlix-GPT",
   "name": "netflix-gpt",
   "version": "0.1.0",
   "private": true,
@@ -8,6 +9,7 @@
     "@testing-library/user-event": "^13.5.0",
     "@webassemblyjs/wast-printer": "^1.11.6",
     "firebase": "^10.5.2",
+    "gh-pages": "^6.1.0",
     "openai": "^4.20.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -17,6 +19,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
