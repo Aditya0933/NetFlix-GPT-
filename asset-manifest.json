@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/NetFlix-GPT/static/css/main.a48fec1f.css",
+    "main.js": "/NetFlix-GPT/static/js/main.1224637b.js",
+    "static/js/787.8e67c6e9.chunk.js": "/NetFlix-GPT/static/js/787.8e67c6e9.chunk.js",
+    "static/media/Netflix_Logo.png": "/NetFlix-GPT/static/media/Netflix_Logo.303904f75553a51bbf31.png",
+    "index.html": "/NetFlix-GPT/index.html",
+    "main.a48fec1f.css.map": "/NetFlix-GPT/static/css/main.a48fec1f.css.map",
+    "main.1224637b.js.map": "/NetFlix-GPT/static/js/main.1224637b.js.map",
+    "787.8e67c6e9.chunk.js.map": "/NetFlix-GPT/static/js/787.8e67c6e9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a48fec1f.css",
+    "static/js/main.1224637b.js"
+  ]
+}
