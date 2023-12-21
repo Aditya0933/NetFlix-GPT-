@@ -20,4 +20,5 @@ export const SUPPORTED_LANGUAGES = [
 ]
 
 
-export const OPEN_AI_KEY = "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"
+// export const OPEN_AI_KEY = "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"
+export const OPEN_AI_KEY = "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"

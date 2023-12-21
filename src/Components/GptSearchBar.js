@@ -29,28 +29,28 @@ const GptSearchBar = () => {
     console.log(SearchTextGPT.current.value);
     // Make a API Call to GPT API and get Movies Result...
 
-    // const QueryGPT =
-    //   "Act as a Movie Recommendation system and suggest some movies for the Query : " +
-    //   SearchTextGPT.current.value +
-    //   ". only give me names of 5 movies, comma seperated like the example result given ahead. Example Result:Gadar, Sholay, Don, Golmaal, Koi Mil Gaya";
+    const QueryGPT =
+      "Act as a Movie Recommendation system and suggest some movies for the Query : " +
+      SearchTextGPT.current.value +
+      ". only give me names of 5 movies, comma seperated like the example result given ahead. Example Result:Gadar, Sholay, Don, Golmaal, Koi Mil Gaya";
 
-    // const gptResults = await openai.chat.completions.create({
-    //   messages: [{ role: "user", content: QueryGPT }],
-    //   model: "gpt-3.5-turbo",
-    // });
+    const gptResults = await openai.chat.completions.create({
+      messages: [{ role: "user", content: QueryGPT }],
+      model: "gpt-3.5-turbo",
+    });
 
-    //This Console Shows Searched Movies using OpenAI API but MY API limit has exceed so I hard code the data...as MoviesGPT
-    // console.log("GPT Movies Search Result- " + gptResults.choices);
-    // const MoviesGPT = gptResults.choices?.[0]?.message?.content.split(",");
+    // This Console Shows Searched Movies using OpenAI API but MY API limit has exceed so I hard code the data...as MoviesGPT
+    console.log("GPT Movies Search Result- " + gptResults.choices);
+    const MoviesGPT = gptResults.choices?.[0]?.message?.content.split(",");
 
     //This is my Hard Coded Data-
-    const MoviesGPT = [
-      "Andaz Apna Apna",
-      "Hera Pheri",
-      "Chupke Chupke",
-      "Jaane Bhi Do Yaar",
-      "Padosan",
-    ];
+    // const MoviesGPT = [
+    //   "Andaz Apna Apna",
+    //   "Hera Pheri",
+    //   "Chupke Chupke",
+    //   "Jaane Bhi Do Yaar",
+    //   "Padosan",
+    // ];
 
     console.log("Movies GPT Array...Start");
     const promiseArray = MoviesGPT.map((movie) => searchMovieTMDB(movie));
