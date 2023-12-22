@@ -19,6 +19,4 @@ export const SUPPORTED_LANGUAGES = [
   {identifiers:"spanish", name:"Spanish"},
 ]
 
-
-// export const OPEN_AI_KEY = "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"
 export const OPEN_AI_KEY = process.env.REACT_APP_OPENAI_KEY
