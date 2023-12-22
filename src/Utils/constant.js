@@ -20,5 +20,5 @@ export const SUPPORTED_LANGUAGES = [
 ]
 
 
-// export const OPEN_AI_KEY = "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"
-export const OPEN_AI_KEY = "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"
+// export const OPEN_AI_KEY = "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"
+export const OPEN_AI_KEY = process.env.REACT_APP_OPENAI_KEY
